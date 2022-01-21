@@ -17,7 +17,7 @@
         Return nfbytes
     End Function
 
-    Public Function appendobjectarray(fbytes As Object, onebyte As Object) As Object()
+    Public Function appendobjectarray(fbytes As Object(), onebyte As Object) As Object()
         Dim nfbytes((fbytes.Length - 1) + 1) As Object
         For huah As Integer = 0 To nfbytes.Length - 1
             If Not huah > fbytes.Length - 1 Then
