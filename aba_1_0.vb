@@ -1,5 +1,5 @@
-    Public Function appendobjectarray(fbytes As Object(), cipherbytes As Object()) As Object()
-        Dim nfbytes(1 + (fbytes.Length - 1) + (cipherbytes.Length - 1)) As Object
+    Public Function appendbytearray(fbytes As Byte(), cipherbytes As Byte()) As Byte()
+        Dim nfbytes(1 + (fbytes.Length - 1) + (cipherbytes.Length - 1)) As Byte
         Dim qehg As Integer = 0
         For huah As Integer = 0 To nfbytes.Length - 1
             If Not huah > fbytes.Length - 1 Then
@@ -17,8 +17,8 @@
         Return nfbytes
     End Function
 
-    Public Function appendobjectarray(fbytes As Object(), onebyte As Object) As Object()
-        Dim nfbytes((fbytes.Length - 1) + 1) As Object
+    Public Function appendbytearray(fbytes As Byte(), onebyte As Byte) As Byte()
+        Dim nfbytes((fbytes.Length - 1) + 1) As Byte
         For huah As Integer = 0 To nfbytes.Length - 1
             If Not huah > fbytes.Length - 1 Then
                 nfbytes(huah) = fbytes(huah)
